@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Local weather</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="css/local_weather.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/local_weather.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9TP10MHftUqwwqfGkugmvnjnM66a4Ex8"></script>
+</head>
+<body>
+
+<div class="container">
+   <h1><font face="tahoma"><div class="heading_1">Local Weather</div></font></h1>	<br/>
+   <h2> A local weather info application </h2>
+   <br/>
+   <div class="temperature">
+        <div class="temperatureImage"></div>
+   	    <div class="temperatureText"></div>
+   	    <div class="toggleTemperatureUnitButton">
+	   	    <a href="#" class="btn btn-info btn-lg" onclick="toggleUnit()">
+	          <span></span> °C/F
+	        </a>
+   	    </div>	
+   </div> <br/> <br/><br/>
+   <div class="generalWeatherInfo">
+       <div class="weatherInfoElement locationName glyphicon glyphicon-map-marker"></div>
+       <div class="weatherInfoElement weatherDescription"></div>
+       <div class="weatherInfoElement windSpeed"></div>
+   </div>
+
+</div>
+
+</body>
+</html>
